@@ -2,5 +2,8 @@
   "cookie1": "Usamos cookies para garantir a você a melhor experiência no nosso site e continuar navegando sem alterar as suas configurações.",
   "cookie2": "Ao continuar, supomos que você aceita esta prática.",
   "accept": "Aceitar",
-  "search": "Buscar"
+  "search": "Buscar",
+  "error-page-1": "Ops, há algo de errado",
+  "error-page-2": "Não foi possível encontrar a página que você esta procurando",
+  "return": "Voltar"
 }

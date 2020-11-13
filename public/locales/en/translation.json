@@ -2,5 +2,8 @@
   "cookie1": "We use cookies to ensure you get the best experience on our website and continue browsing without changing your settings.",
   "cookie2": "We assume that you accept this practice.",
   "accept": "Accept",
-  "search": "Search"
+  "search": "Search",
+  "return": "Return",
+  "error-page-1": "Oops, something is wrong",
+  "error-page-2": "We couldn't find the page you are looking for"
 }
