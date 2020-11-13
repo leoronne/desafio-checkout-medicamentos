@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gsTCUz QGLgt"
+  >
+    <div
+      class="sc-dlfnbm jwCXoh"
+    >
+      <form
+        class="sc-hKgILt hWhjlt"
+      >
+        <header>
+          <h1>
+            homepage-title-1
+          </h1>
+          <p>
+            homepage-title-2 Friday, November 13, 2020.
+          </p>
+        </header>
+        <main>
+          <div
+            class="sc-eCssSg hZNvkz"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Ácido zoledrônico 4mg
+              </h2>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg hZNvkz"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Água para injeção 1mL
+              </h2>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg hZNvkz"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Betaserc 16mg
+              </h2>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg hZNvkz"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Bromazepam 3mg
+              </h2>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p
+            class="footer-text"
+          >
+            homepage-footer-text-1
+          </p>
+          <button
+            class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-1 MuiButton-text"
+            data-testid="submit-button"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <p>
+                find-phamarcy
+              </p>
+              <span>
+                sponsor
+              </span>
+            </span>
+          </button>
+        </footer>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

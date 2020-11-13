@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-bdfBwQ tglzD"
+  >
+    <div
+      class="sc-gsTCUz ZVqFO"
+    >
+      <h1>
+        <img
+          alt="Memed"
+          src="logo-horizontal-white.png"
+        />
+      </h1>
+    </div>
+    <div
+      class="sc-dlfnbm gDtCbr"
+    >
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline"
+      >
+        <div
+          aria-haspopup="listbox"
+          class="MuiSelect-root WithStyles(ForwardRef(Select))-root-2 MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          role="button"
+          tabindex="0"
+        >
+          <svg>
+            brazil.svg
+          </svg>
+          <span>
+            Português (Brasil)
+          </span>
+        </div>
+        <input
+          aria-hidden="true"
+          class="MuiSelect-nativeInput"
+          data-testid="language-select"
+          tabindex="-1"
+          value="pt"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

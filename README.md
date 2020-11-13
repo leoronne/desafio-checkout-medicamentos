@@ -9,6 +9,7 @@
   <a href="#techs-rocket">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#installation-wrench">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license-memo">License</a>
 </p>
 
@@ -18,7 +19,7 @@
 
 ## Project :star2:
 
-This repo contains a challenge proposed by Memed, it's an medicine checkout application based on e-Prescribing.
+This repo contains a [challenge](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/challenge-description.md) proposed by Memed, it's an medicine checkout application based on e-Prescribing.
 
 <br>
 
@@ -47,6 +48,12 @@ Then you can install the application using `npm install` or `yarn install` on th
 To start the application <strong>interface</strong> just run `npm run start:web` or `yarn start:web` on the root dir of the folder.
 
 <strong>Note: you need to create a .env file on the client directory based on the [example file](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example).</strong>
+
+<br>
+
+## Test :heavy_check_mark:
+
+To run the tests on this application, just run `npm run test:cover` or `yarn test:cover` on the client directory, it will generate a coverage report on the same dir.
 
 <br>
 

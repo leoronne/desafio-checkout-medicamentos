@@ -6,34 +6,51 @@ const ButtonOutlined = withStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
     background: 'transparent',
     borderRadius: 'var(--border-radius)',
     border: `2px solid var(--color-primary)`,
     outline: 0,
     minWidth: '40px',
     fontFamily: 'var(--font-family)',
-    fontSize: '14px',
     fontWeight: 700,
     color: 'var(--color-primary)',
-    height: '40px',
+    // height: '40px',
     cursor: 'pointer',
     transition: 'var(--transition)',
-    '& svg, span': {
+    textTransform: 'none',
+    '& p': {
+      fontSize: '16px',
+    },
+    '& .MuiButton-label': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      '& span': {
+        fontSize: '13px',
+        color: 'var(--color-primary-lighter)',
+      },
+    },
+    '& svg, span, p': {
       transition: 'var(--transition)',
       color: 'var(--color-primary)',
     },
     '&:hover': {
       transition: 'var(--transition)',
       background: 'var(--color-primary)',
-      '& svg, span': {
+      '& svg, span, p': {
         transition: 'var(--transition)',
         color: 'white',
+      },
+      '& span': {
+        color: 'var(--grey) !important',
       },
     },
     '&:focus': {
       transition: 'var(--transition)',
       background: 'var(--color-primary)',
-      '& svg, span': {
+      '& svg, span, p': {
         transition: 'var(--transition)',
         color: 'white',
       },
