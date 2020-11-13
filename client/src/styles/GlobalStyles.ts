@@ -20,9 +20,11 @@ export default createGlobalStyle`
     --scrol-bg: #89777a;
 
     --placeholder-color: #a7a8a9;
+    --border-color: #a7a8a9;
 
     --disabled: #9e9e9e;
     --text-color: #707070;
+    --text-color-dark: #222;
 
 
     --menu-hover: #787777;

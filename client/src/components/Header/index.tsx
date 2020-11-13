@@ -32,6 +32,7 @@ const Header: React.FC = () => {
           value={language}
           onChange={e => changeLanguage(String(e.target.value))}
           MenuProps={{ classes: { paper: classes.selectOptions } }}
+          inputProps={{ 'data-testid': 'language-select' }}
         >
           <MenuItem value="en">
             <USAIcon />
