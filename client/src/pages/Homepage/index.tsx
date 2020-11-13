@@ -1,7 +1,8 @@
 /* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CircularProgress } from '@material-ui/core';
+import { useSnackbar } from 'notistack';
 
 import { useLanguage } from '../../hooks';
 
@@ -11,6 +12,8 @@ import { Container, Content, Form, MedicineCard, MedicineIcon } from './styles';
 const Homepage: React.FC = () => {
   const { language } = useLanguage();
   const { t } = useTranslation();
+  const { enqueueSnackbar } = useSnackbar();
+
   const date = new Date();
 
   const [loading, setLoading] = useState(false);
@@ -37,10 +40,21 @@ const Homepage: React.FC = () => {
     },
   ]);
 
+  const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+    try {
+      e.preventDefault();
+      setLoading(true);
+    } catch (err) {
+      enqueueSnackbar(err?.response?.data?.error ? err.response.data.error : err.message, { variant: 'error' });
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
   return (
     <Container>
       <Content>
-        <Form>
+        <Form onSubmit={e => handleSubmit(e)}>
           <header>
             <h1>{t('homepage-title-1')}</h1>
 
