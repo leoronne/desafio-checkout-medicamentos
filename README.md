@@ -46,9 +46,7 @@ Then you can install the application using `npm install` or `yarn install` on th
 
 To start the application <strong>interface</strong> just run `npm run start:web` or `yarn start:web` on the root dir of the folder.
 
-<strong>
-      Note: you need to create a .env file on the client directory based on the [example file](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example).
-</strong>
+<strong>Note: you need to create a .env file on the client directory based on the [example file](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example).</strong>
 
 <br>
 
