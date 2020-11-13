@@ -2,8 +2,19 @@
   "cookie1": "Usamos cookies para garantir a você a melhor experiência no nosso site e continuar navegando sem alterar as suas configurações.",
   "cookie2": "Ao continuar, supomos que você aceita esta prática.",
   "accept": "Aceitar",
+
   "search": "Buscar",
+
   "error-page-1": "Ops, há algo de errado",
   "error-page-2": "Não foi possível encontrar a página que você esta procurando",
-  "return": "Voltar"
+  "return": "Voltar",
+
+  "homepage-title-1": "Dr. Memed",
+  "homepage-title-2": "Prescrição criada em",
+
+  "homepage-footer-text-1": "A Prescrição Digital Memed © não dispensa a apresentação de sua versão impressa à farmácia. O médico responsável por esta prescrição não possui qualquer tipo de vínculo com os preços e/ou farmácias apresentados.",
+  "find-phamarcy": "Encontrar Farmácia",
+  "sponsor": "Serviço oferecido por Memed",
+
+  "quantity": "Quantidade"
 }

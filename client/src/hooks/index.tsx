@@ -8,7 +8,7 @@ import i18n from '../i18n';
 
 // import { store, persistor } from '../store';
 
-import { LanguageProvider } from './useLanguage';
+import { LanguageProvider, useLanguage } from './useLanguage';
 
 const AppProvider: React.FC = ({ children }) => {
   return (
@@ -34,4 +34,5 @@ const AppProvider: React.FC = ({ children }) => {
   );
 };
 
+export { useLanguage };
 export default AppProvider;
