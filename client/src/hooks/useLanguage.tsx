@@ -13,7 +13,7 @@ const LanguageProvider: React.FC = ({ children }) => {
   const [language, setLanguage] = useState('pt');
 
   const changeLanguage = useCallback((lgn: string) => {
-    if (process.env.NODE_ENV !== 'test') i18n.changeLanguage(lgn);
+    if (process.env.NODE_ENV !== 'test') i18n.changeLanguage(lgn.toLowerCase());
     Cookies.set('@Memed:language', lgn);
     setLanguage(lgn);
   }, []);

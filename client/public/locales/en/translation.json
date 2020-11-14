@@ -16,5 +16,13 @@
   "find-phamarcy": "Find Pharmacy",
   "sponsor": "Sponsored by Memed",
 
-  "quantity": "Quantity"
+  "quantity": "Quantity",
+  "checkout": "Checkout",
+  "checkout-message": "Your order was successfully sent!",
+  "total": "Total",
+
+  "distance-information": "Directions to the location may have a longer distance.",
+
+  "at": "at",
+  "meters": "meters"
 }

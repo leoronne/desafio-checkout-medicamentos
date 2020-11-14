@@ -3,25 +3,29 @@
 exports[`Homepage should render 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gsTCUz QGLgt"
+    class="sc-gsTCUz hMQNWM"
   >
     <div
-      class="sc-dlfnbm jwCXoh"
+      class="sc-dlfnbm kYAXRU"
     >
       <form
-        class="sc-hKgILt hWhjlt"
+        class="sc-hKgILt irjnbX"
+        data-testid="initial-form"
+        style="opacity: 0; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
       >
         <header>
           <h1>
             homepage-title-1
           </h1>
           <p>
-            homepage-title-2 Friday, November 13, 2020.
+            homepage-title-2 Saturday, November 14, 2020.
           </p>
         </header>
-        <main>
+        <main
+          class="sc-jSgupP brRsOS"
+        >
           <div
-            class="sc-eCssSg hZNvkz"
+            class="sc-eCssSg kaQzAS"
           >
             <div
               class="medicine-logo"
@@ -44,7 +48,7 @@ exports[`Homepage should render 1`] = `
             </div>
           </div>
           <div
-            class="sc-eCssSg hZNvkz"
+            class="sc-eCssSg kaQzAS"
           >
             <div
               class="medicine-logo"
@@ -67,30 +71,7 @@ exports[`Homepage should render 1`] = `
             </div>
           </div>
           <div
-            class="sc-eCssSg hZNvkz"
-          >
-            <div
-              class="medicine-logo"
-            >
-              <svg
-                class="sc-bdfBwQ briHBD"
-              >
-                medicine.svg
-              </svg>
-            </div>
-            <div
-              class="medicine-info"
-            >
-              <p>
-                quantity: 1
-              </p>
-              <h2>
-                Betaserc 16mg
-              </h2>
-            </div>
-          </div>
-          <div
-            class="sc-eCssSg hZNvkz"
+            class="sc-eCssSg kaQzAS"
           >
             <div
               class="medicine-logo"
@@ -113,7 +94,9 @@ exports[`Homepage should render 1`] = `
             </div>
           </div>
         </main>
-        <footer>
+        <footer
+          class="sc-gKsewC GOZSM"
+        >
           <p
             class="footer-text"
           >
@@ -134,6 +117,217 @@ exports[`Homepage should render 1`] = `
               <span>
                 sponsor
               </span>
+            </span>
+          </button>
+        </footer>
+      </form>
+      <form
+        class="sc-jrAGrp khHWWE hidden-card"
+        data-testid="checkout-form"
+      >
+        <header
+          class="sc-kEjbxe cCZfCX"
+        >
+          <div
+            class="header-button"
+          >
+            <svg
+              class="sc-pFZIQ hoIFEt active"
+              data-testid="return-button"
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="19"
+                x2="5"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 19 5 12 12 5"
+              />
+            </svg>
+          </div>
+          <div
+            class="header-info"
+          >
+            <h1>
+              find-phamarcy
+            </h1>
+            <p>
+              sponsor
+            </p>
+          </div>
+        </header>
+        <main
+          class="sc-jSgupP brRsOS"
+        >
+          <div
+            class="sc-iqHYGH bTprwc"
+          >
+            <div
+              class="pharmacy-logo"
+            >
+              <svg
+                class="sc-iBPRYJ huOmKN"
+              >
+                pharmacy.svg
+              </svg>
+            </div>
+            <div
+              class="pharmacy-info"
+            >
+              <div
+                class="info"
+              >
+                <h2 />
+                <span>
+                  (at undefined meters)
+                </span>
+                <a
+                  href="https://www.google.com.br/maps/dir/-23.5648304,+-46.6436604/undefined,+undefined/@undefined,undefined,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d-46.6436604!2d-23.5648304!1m3!2m2!1dundefined!2dundefined"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    class="sc-fubCfw cOWnaT"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <span
+                class="info-text"
+              >
+                distance-information
+              </span>
+              <p>
+                total: $NaN
+              </p>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg kaQzAS"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Ácido zoledrônico 4mg
+              </h2>
+              <h4>
+                $10.86
+              </h4>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg kaQzAS"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Água para injeção 1mL
+              </h2>
+              <h4>
+                $30.06
+              </h4>
+            </div>
+          </div>
+          <div
+            class="sc-eCssSg kaQzAS"
+          >
+            <div
+              class="medicine-logo"
+            >
+              <svg
+                class="sc-bdfBwQ briHBD"
+              >
+                medicine.svg
+              </svg>
+            </div>
+            <div
+              class="medicine-info"
+            >
+              <p>
+                quantity: 1
+              </p>
+              <h2>
+                Bromazepam 3mg
+              </h2>
+              <h4>
+                $0.46
+              </h4>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="sc-gKsewC GOZSM"
+        >
+          <p
+            class="footer-text"
+          >
+            homepage-footer-text-1
+          </p>
+          <button
+            class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-1 MuiButton-text"
+            data-testid="submit-checkout"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <p>
+                checkout
+              </p>
             </span>
           </button>
         </footer>

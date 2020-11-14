@@ -10,11 +10,6 @@ export const MedicineIcon = styled(Medicine)`
 export const Container = styled.div`
   width: 100%;
   height: calc(100vh - 91px);
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  height: 100%;
 
   padding-top: 20px;
 
@@ -28,7 +23,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Content = styled.div`
   width: 100%;
   height: 100%;
 
@@ -40,15 +35,23 @@ export const Form = styled.form`
   background-color: white;
   box-shadow: var(--box-shadow);
 
-  padding: 25px 40px;
+  padding: 15px;
+
+  @media (min-width: 390px) {
+    padding: 25px 40px;
+  }
+`;
+
+export const Form = styled.form`
+  width: 100%;
+  height: 100%;
+  position: relative;
 
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   flex-direction: column;
-
-  position: relative;
 
   header {
     display: flex;
@@ -75,49 +78,13 @@ export const Form = styled.form`
     }
   }
 
-  main {
-    padding: 5px;
-
-    width: 100%;
-    height: auto;
-    overflow-y: none;
-  }
-
-  footer {
-    padding: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
-
-    .footer-text {
-      text-align: justify;
-      font-size: 14px;
-      color: var(--text-color);
-
-      line-height: 22px;
-    }
-
-    button {
-      margin-top: 25px;
-      width: 100%;
-    }
-  }
-
   @media (min-width: 390px) {
+    justify-content: flex-start;
     header {
       padding: 10px 20px;
       h1 {
         font-size: 34px;
       }
-    }
-
-    main {
-      padding: 10px;
-      height: 100%;
-      overflow-y: auto;
     }
   }
 `;
@@ -143,9 +110,15 @@ export const MedicineCard = styled.div`
       color: var(--text-color-dark);
     }
 
+    h4 {
+      font-size: 15px;
+      color: var(--color-primary);
+      margin: 6px 0;
+    }
+
     p {
       text-align: center;
-      margin: 5px 0;
+      margin: 6px 0;
       font-size: 12px;
       color: var(--text-color);
     }
@@ -161,9 +134,49 @@ export const MedicineCard = styled.div`
         font-size: 18px;
       }
 
+      h4 {
+        font-size: 16px;
+      }
+
       p {
         font-size: 14px;
       }
     }
+  }
+`;
+
+export const MainContent = styled.main`
+  padding: 0 5px 5px 5px;
+
+  width: 100%;
+  height: auto;
+  overflow-y: none;
+  @media (min-width: 390px) {
+    padding: 0 10px 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+`;
+
+export const FormFooter = styled.footer`
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  .footer-text {
+    text-align: justify;
+    font-size: 14px;
+    color: var(--text-color);
+
+    line-height: 22px;
+  }
+
+  button {
+    margin-top: 25px;
+    width: 100%;
   }
 `;

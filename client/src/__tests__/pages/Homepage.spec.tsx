@@ -65,4 +65,78 @@ describe('Homepage', () => {
       expect(html).toMatchSnapshot();
     });
   });
+
+  it('should find pharmacy', async () => {
+    await act(async () => {
+      const { getByTestId } = render(
+        <Provider store={store}>
+          <Homepage />
+        </Provider>
+      );
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const form = await waitFor(() => getByTestId('initial-form'));
+      const checkoutCard = await waitFor(() => getByTestId('checkout-form'));
+
+      await waitFor(() => {
+        expect(form.classList.contains('hidden-card')).toBe(true);
+        expect(checkoutCard.classList.contains('hidden-card')).toBe(false);
+      });
+    });
+  });
+
+  it('should be able to return to page 1 after find pharmacy', async () => {
+    await act(async () => {
+      const { getByTestId } = render(
+        <Provider store={store}>
+          <Homepage />
+        </Provider>
+      );
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const returnButton = await waitFor(() => getByTestId('return-button'));
+
+      fireEvent.click(returnButton);
+
+      const form = await waitFor(() => getByTestId('initial-form'));
+      const checkoutCard = await waitFor(() => getByTestId('checkout-form'));
+
+      await waitFor(() => {
+        expect(form.classList.contains('hidden-card')).toBe(false);
+        expect(checkoutCard.classList.contains('hidden-card')).toBe(true);
+      });
+    });
+  });
+
+  it('should submit checkout', async () => {
+    await act(async () => {
+      const { getByTestId } = render(
+        <Provider store={store}>
+          <Homepage />
+        </Provider>
+      );
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const submitCheckout = await waitFor(() => getByTestId('submit-checkout'));
+
+      fireEvent.click(submitCheckout);
+
+      const form = await waitFor(() => getByTestId('initial-form'));
+      const checkoutCard = await waitFor(() => getByTestId('checkout-form'));
+
+      await waitFor(() => {
+        expect(form.classList.contains('hidden-card')).toBe(false);
+        expect(checkoutCard.classList.contains('hidden-card')).toBe(true);
+      });
+    });
+  });
 });

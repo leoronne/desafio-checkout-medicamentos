@@ -3,17 +3,17 @@
 exports[`NotFound page should render 1`] = `
 <DocumentFragment>
   <div
-    class="sc-jSgupP koWPgK"
+    class="sc-crrsfI kGeOcW"
     data-testid="not-found-page"
   >
     <div
-      class="sc-gKsewC hWaegj"
+      class="sc-dQppl glchoo"
     >
       <main
-        class="sc-iBPRYJ IQALX"
+        class="sc-bqyKva hPOvsb"
       >
         <div
-          class="sc-fubCfw eMRNCO"
+          class="sc-kstrdz hbYOsJ"
         >
           <h2>
             error-page-1
@@ -25,7 +25,7 @@ exports[`NotFound page should render 1`] = `
             class="home-link"
           >
             <svg
-              class="sc-jrAGrp ea-dyEi"
+              class="sc-fodVxV iGWzCP"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -44,7 +44,7 @@ exports[`NotFound page should render 1`] = `
           </div>
         </div>
         <div
-          class="sc-pFZIQ lmUXij"
+          class="sc-hBEYos jJrvuh"
         />
       </main>
     </div>
