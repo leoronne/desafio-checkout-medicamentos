@@ -121,6 +121,68 @@ describe('Homepage', () => {
     });
   });
 
+  it('should be able to open Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('pharmacies-modal-container')).toBeTruthy();
+      });
+    });
+  });
+
+  it('should be able to close Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      const closeButton = await waitFor(() => getByTestId('modal-close-button'));
+
+      fireEvent.click(closeButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('pharmacies-modal-container')).not.toBeTruthy();
+      });
+    });
+  });
+
+  it('should be able to open Accordion on Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      const accordionButton = await waitFor(() => getByTestId('accordion-1'));
+
+      fireEvent.click(accordionButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('accordion-1-true')).toBeTruthy();
+      });
+    });
+  });
+
   it('should submit checkout', async () => {
     await act(async () => {
       const { getByTestId } = render(<Homepage />);

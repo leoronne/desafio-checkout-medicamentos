@@ -122,17 +122,17 @@ exports[`Homepage should render 1`] = `
         </footer>
       </form>
       <form
-        class="sc-jrAGrp khHWWE hidden-card"
+        class="sc-hBEYos lmABrK hidden-card"
         data-testid="checkout-form"
       >
         <header
-          class="sc-kEjbxe cCZfCX"
+          class="sc-fodVxV eATPdz"
         >
           <div
             class="header-button"
           >
             <svg
-              class="sc-pFZIQ hoIFEt active"
+              class="sc-kstrdz fBXbdJ active"
               data-testid="return-button"
               fill="none"
               height="1em"
@@ -163,6 +163,11 @@ exports[`Homepage should render 1`] = `
             </h1>
             <p>
               sponsor
+              <span
+                data-testid="modal-button"
+              >
+                see-more
+              </span>
             </p>
           </div>
         </header>
@@ -170,13 +175,13 @@ exports[`Homepage should render 1`] = `
           class="sc-jSgupP brRsOS"
         >
           <div
-            class="sc-iqHYGH bTprwc"
+            class="sc-fFubgz eUAgew"
           >
             <div
               class="pharmacy-logo"
             >
               <svg
-                class="sc-iBPRYJ huOmKN"
+                class="sc-dQppl gusQjG"
               >
                 pharmacy.svg
               </svg>
@@ -199,7 +204,7 @@ exports[`Homepage should render 1`] = `
                   target="_blank"
                 >
                   <svg
-                    class="sc-fubCfw cOWnaT"
+                    class="sc-bqyKva gWlILe"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
