@@ -12,6 +12,10 @@
   <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license-memo">License</a>
+  <br>  
+  <br>  
+  <br>
+  <a href="https://insomnia.rest/run/?label=Memed&uri=https%3A%2F%2Fgithub.com%2Fleoronne%2Fmemed-medicine-checkout-challenge%2Fblob%2Fmaster%2Fserver%2Fserver-requests.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 ##
