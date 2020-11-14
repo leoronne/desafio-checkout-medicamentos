@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import notistack from 'notistack';
 
-// import { charactersResponse } from '../../__mocks__';
+// import { pharmacyResponse } from '../../__mocks__';
 
 import { Homepage } from '../../pages';
 
