@@ -1,17 +1,15 @@
 import React from 'react';
 import { render, fireEvent, waitFor, act } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store';
 import notistack from 'notistack';
 
-// import { pharmacyResponse } from '../../__mocks__';
+import { mockPharmacies } from '../../__mocks__';
 
 import { Homepage } from '../../pages';
 
 const mockedHistoryPush = jest.fn();
-const mockedloadData = jest.fn();
 const enqueueSnackbar = jest.fn();
 const closeSnackbar = jest.fn();
+const mockGetClosePharmacies = jest.fn();
 
 jest.mock('react-router-dom', () => {
   return {
@@ -35,30 +33,47 @@ jest.mock('../../hooks', () => {
     useLanguage: () => ({
       language: 'en',
     }),
+    useData: () => ({
+      getClosePharmacies: mockGetClosePharmacies,
+      medicines: [
+        {
+          name: 'Ácido zoledrônico 4mg',
+          price: 10.86,
+          quantity: 1,
+        },
+        {
+          name: 'Água para injeção 1mL',
+          price: 30.06,
+          quantity: 1,
+        },
+        {
+          name: 'Bromazepam 3mg',
+          price: 0.46,
+          quantity: 1,
+        },
+      ],
+      coordinates: {
+        lat: -23.5648304,
+        lng: -46.6436604,
+      },
+      closePharmacies: mockPharmacies,
+    }),
   };
 });
 
 describe('Homepage', () => {
   beforeEach(() => {
     mockedHistoryPush.mockClear();
-    mockedloadData.mockClear();
+    mockGetClosePharmacies.mockClear();
 
     jest.spyOn(notistack, 'useSnackbar').mockImplementation(() => {
       return { enqueueSnackbar, closeSnackbar };
     });
   });
 
-  const initialState = { output: 10 };
-  const mockStore = configureStore();
-  const store = mockStore(initialState);
-
   it('should render', async () => {
     await act(async () => {
-      const { asFragment } = render(
-        <Provider store={store}>
-          <Homepage />
-        </Provider>
-      );
+      const { asFragment } = render(<Homepage />);
 
       const html = asFragment();
 
@@ -68,11 +83,7 @@ describe('Homepage', () => {
 
   it('should find pharmacy', async () => {
     await act(async () => {
-      const { getByTestId } = render(
-        <Provider store={store}>
-          <Homepage />
-        </Provider>
-      );
+      const { getByTestId } = render(<Homepage />);
 
       const submitButton = await waitFor(() => getByTestId('submit-button'));
 
@@ -90,11 +101,7 @@ describe('Homepage', () => {
 
   it('should be able to return to page 1 after find pharmacy', async () => {
     await act(async () => {
-      const { getByTestId } = render(
-        <Provider store={store}>
-          <Homepage />
-        </Provider>
-      );
+      const { getByTestId } = render(<Homepage />);
 
       const submitButton = await waitFor(() => getByTestId('submit-button'));
 
@@ -114,13 +121,71 @@ describe('Homepage', () => {
     });
   });
 
+  it('should be able to open Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('pharmacies-modal-container')).toBeTruthy();
+      });
+    });
+  });
+
+  it('should be able to close Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      const closeButton = await waitFor(() => getByTestId('modal-close-button'));
+
+      fireEvent.click(closeButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('pharmacies-modal-container')).not.toBeTruthy();
+      });
+    });
+  });
+
+  it('should be able to open Accordion on Pharmacies Modal', async () => {
+    await act(async () => {
+      const { getByTestId, queryByTestId } = render(<Homepage />);
+
+      const submitButton = await waitFor(() => getByTestId('submit-button'));
+
+      fireEvent.click(submitButton);
+
+      const modalButton = await waitFor(() => getByTestId('modal-button'));
+
+      fireEvent.click(modalButton);
+
+      const accordionButton = await waitFor(() => getByTestId('accordion-1'));
+
+      fireEvent.click(accordionButton);
+
+      await waitFor(() => {
+        expect(queryByTestId('accordion-1-true')).toBeTruthy();
+      });
+    });
+  });
+
   it('should submit checkout', async () => {
     await act(async () => {
-      const { getByTestId } = render(
-        <Provider store={store}>
-          <Homepage />
-        </Provider>
-      );
+      const { getByTestId } = render(<Homepage />);
 
       const submitButton = await waitFor(() => getByTestId('submit-button'));
 

@@ -24,5 +24,8 @@
   "distance-information": "Directions to the location may have a longer distance.",
 
   "at": "at",
-  "meters": "meters"
+  "meters": "meters",
+
+  "see-more": "See other pharmacies",
+  "more-pharmacies": "List of pharmacies found"
 }

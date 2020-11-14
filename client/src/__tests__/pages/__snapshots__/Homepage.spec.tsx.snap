@@ -122,17 +122,17 @@ exports[`Homepage should render 1`] = `
         </footer>
       </form>
       <form
-        class="sc-jrAGrp khHWWE hidden-card"
+        class="sc-hBEYos lmABrK hidden-card"
         data-testid="checkout-form"
       >
         <header
-          class="sc-kEjbxe cCZfCX"
+          class="sc-fodVxV eATPdz"
         >
           <div
             class="header-button"
           >
             <svg
-              class="sc-pFZIQ hoIFEt active"
+              class="sc-kstrdz fBXbdJ active"
               data-testid="return-button"
               fill="none"
               height="1em"
@@ -163,6 +163,11 @@ exports[`Homepage should render 1`] = `
             </h1>
             <p>
               sponsor
+              <span
+                data-testid="modal-button"
+              >
+                see-more
+              </span>
             </p>
           </div>
         </header>
@@ -170,13 +175,13 @@ exports[`Homepage should render 1`] = `
           class="sc-jSgupP brRsOS"
         >
           <div
-            class="sc-iqHYGH bTprwc"
+            class="sc-fFubgz eUAgew"
           >
             <div
               class="pharmacy-logo"
             >
               <svg
-                class="sc-iBPRYJ huOmKN"
+                class="sc-dQppl gusQjG"
               >
                 pharmacy.svg
               </svg>
@@ -187,17 +192,19 @@ exports[`Homepage should render 1`] = `
               <div
                 class="info"
               >
-                <h2 />
+                <h2>
+                  Farmais
+                </h2>
                 <span>
-                  (at undefined meters)
+                  (at 546 meters)
                 </span>
                 <a
-                  href="https://www.google.com.br/maps/dir/-23.5648304,+-46.6436604/undefined,+undefined/@undefined,undefined,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d-46.6436604!2d-23.5648304!1m3!2m2!1dundefined!2dundefined"
+                  href="https://www.google.com.br/maps/dir/undefined,+undefined/-23.5640019,+-46.6489309/@-23.5640019,-46.6489309,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1dundefined!2dundefined!1m3!2m2!1d-46.6489309!2d-23.5640019"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <svg
-                    class="sc-fubCfw cOWnaT"
+                    class="sc-bqyKva gWlILe"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -225,7 +232,7 @@ exports[`Homepage should render 1`] = `
                 distance-information
               </span>
               <p>
-                total: $NaN
+                total: $41.38
               </p>
             </div>
           </div>
