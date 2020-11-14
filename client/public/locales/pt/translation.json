@@ -16,5 +16,13 @@
   "find-phamarcy": "Encontrar Farmácia",
   "sponsor": "Serviço oferecido por Memed",
 
-  "quantity": "Quantidade"
+  "quantity": "Quantidade",
+  "checkout": "Finalizar",
+  "checkout-message": "Pedido enviado com sucesso!",
+  "total": "Total",
+
+  "distance-information": "As rotas para o local podem ter uma distância maior.",
+
+  "at": "a",
+  "meters": "metros"
 }

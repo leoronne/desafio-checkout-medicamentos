@@ -22,6 +22,9 @@ const ButtonOutlined = withStyles({
     '& p': {
       fontSize: '16px',
     },
+    '& .loader': {
+      padding: '6px 0',
+    },
     '& .MuiButton-label': {
       display: 'flex',
       justifyContent: 'center',
@@ -59,6 +62,9 @@ const ButtonOutlined = withStyles({
       color: 'var(--disabled)',
       border: '2px solid var(--disabled)',
       cursor: 'not-allowed',
+      '& svg, span, p': {
+        color: 'var(--disabled) !important',
+      },
     },
     '& .MuiButton-label div': {
       display: 'flex',

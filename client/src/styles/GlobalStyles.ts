@@ -170,4 +170,8 @@ export default createGlobalStyle`
     .navigation-links:hover {
       transition: var(--transition);
     }
+
+    .hidden-card {
+      display: none;
+    }
 `;
