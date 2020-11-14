@@ -43,7 +43,9 @@ For production basis, I decided to implement an server on the application to han
 
 The application has two languages implemented (Portuguese-BR and English-USA), the user can easily alter it on the Header of the page. But it doesn't affect the names of the items received from the API (since it does not have this functionality implemented, unfortunatelly).
 
-The page is 100% responsive, so the user can acces it on the web and mobile.
+On the Checkout Page (when the application finds the nearest pharmacy with lowest price), the user can also open a modal in which lists all the pharmacies found, the total price and each item value.
+
+The application is 100% responsive, so the user can acces it on the web and mobile.
 
 There is also a Not Found Page if the user tries to access a route that doesn't exists.
 
