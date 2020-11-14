@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { CircularProgress } from '@material-ui/core';
 import { useSnackbar } from 'notistack';
 
+import PharmaciesList from './PharmaciesList';
+
 import { PharmaciesInfo } from '../../../@types';
 
 import { useLanguage } from '../../../hooks';
@@ -15,7 +17,6 @@ import { Container, FormHeader, LeftIcon, LinkIcon, PharmacyCard, PharmacyIcon }
 interface Props {
   items: {
     name: string;
-    price: number;
     quantity: number;
   }[];
   pharmacies: PharmaciesInfo[];
@@ -30,6 +31,7 @@ const CheckoutCard: React.FC<Props> = ({ items, pharmacies, setFrame, frame, ori
   const { enqueueSnackbar } = useSnackbar();
 
   const [loading, setLoading] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const link = `https://www.google.com.br/maps/dir/${origin?.lat},+${origin?.lng}/${pharmacies[0]?.lat},+${pharmacies[0]?.lng}/@${pharmacies[0]?.lat},${pharmacies[0]?.lng},17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d${origin?.lng}!2d${origin?.lat}!1m3!2m2!1d${pharmacies[0]?.lng}!2d${pharmacies[0]?.lat}`;
 
@@ -48,6 +50,17 @@ const CheckoutCard: React.FC<Props> = ({ items, pharmacies, setFrame, frame, ori
     }
   }, []);
 
+  const getItemPrice = useCallback(
+    (medicine: { name: string; quantity: number }) => {
+      if (pharmacies.length > 0) {
+        const pharmacyItem = pharmacies[0]?.medicines.filter(m => m.name === medicine.name);
+        return Intl.NumberFormat(language, { style: 'currency', currency: language === 'pt' ? 'BRL' : 'USD' }).format(Number(pharmacyItem[0]?.price * medicine.quantity));
+      }
+      return 0;
+    },
+    [language, pharmacies]
+  );
+
   return (
     <Container onSubmit={e => handleSubmit(e)} className={frame === 2 ? '' : 'hidden-card'} data-testid="checkout-form">
       <FormHeader>
@@ -56,7 +69,10 @@ const CheckoutCard: React.FC<Props> = ({ items, pharmacies, setFrame, frame, ori
         </div>
         <div className="header-info">
           <h1>{t('find-phamarcy')}</h1>
-          <p>{t('sponsor')}</p>
+          <p>
+            {t('sponsor')}
+            <span onClick={() => setOpenModal(true)} data-testid="modal-button">{t('see-more')}</span>
+          </p>
         </div>
       </FormHeader>
       <MainContent>
@@ -84,7 +100,7 @@ const CheckoutCard: React.FC<Props> = ({ items, pharmacies, setFrame, frame, ori
             <div className="medicine-info">
               <p>{`${t('quantity')}: ${medicine.quantity}`}</p>
               <h2>{medicine.name}</h2>
-              <h4>{Intl.NumberFormat(language, { style: 'currency', currency: language === 'pt' ? 'BRL' : 'USD' }).format(Number(medicine.price * medicine.quantity))}</h4>
+              <h4>{getItemPrice(medicine)}</h4>
             </div>
           </MedicineCard>
         ))}
@@ -102,6 +118,7 @@ const CheckoutCard: React.FC<Props> = ({ items, pharmacies, setFrame, frame, ori
           )}
         </ButtonOutlined>
       </FormFooter>
+      <PharmaciesList pharmacies={pharmacies} items={items} setOpenModal={setOpenModal} openModal={openModal} />
     </Container>
   );
 };

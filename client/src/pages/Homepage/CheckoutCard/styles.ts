@@ -86,11 +86,13 @@ export const FormHeader = styled.header`
 
   width: 100%;
 
-  padding: 10px;
+  padding: 10px 0;
 
   border-bottom: 1px solid var(--border-color);
 
   .header-info {
+    width: 100%;
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -105,10 +107,48 @@ export const FormHeader = styled.header`
     }
 
     p {
-      text-align: center;
+      text-align: left;
       margin: 10px 0;
       font-size: 14px;
       color: var(--text-color);
+
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        text-align: right;
+        font-weight: 500;
+        color: var(--color-primary);
+        cursor: pointer;
+
+        text-decoration: none;
+        transition: var(--transition-slow);
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--color-primary-dark);
+          visibility: hidden;
+          transition: all var(--transition-slow);
+          width: 0;
+        }
+
+        &:hover:before {
+          visibility: visible;
+          width: 100%;
+        }
+
+        &:hover {
+          transition: var(--transition-slow);
+        }
+      }
     }
   }
 
@@ -161,7 +201,7 @@ export const PharmacyCard = styled.div`
       text-align: center;
       margin: 6px 0;
       font-size: 13px;
-      color: var(--text-color);
+      color: var(--color-primary-dark);
     }
   }
 

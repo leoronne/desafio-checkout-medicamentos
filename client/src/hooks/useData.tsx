@@ -10,7 +10,6 @@ import { GetPharmaciesInfo, PharmaciesInfo } from '../@types';
 interface DataContextProps {
   medicines: Array<{
     name: string;
-    price: number;
     quantity: number;
   }>;
   coordiantes: {
@@ -29,7 +28,6 @@ interface DataContextProps {
     React.SetStateAction<
       {
         name: string;
-        price: number;
         quantity: number;
       }[]
     >
@@ -43,17 +41,14 @@ const DataProvider: React.FC = ({ children }) => {
   const [medicines, setMedicnes] = useState([
     {
       name: 'Ácido zoledrônico 4mg',
-      price: 10.86,
       quantity: 1,
     },
     {
       name: 'Água para injeção 1mL',
-      price: 30.06,
       quantity: 1,
     },
     {
       name: 'Bromazepam 3mg',
-      price: 0.46,
       quantity: 1,
     },
   ]);
