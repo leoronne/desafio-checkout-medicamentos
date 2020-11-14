@@ -10,18 +10,18 @@ describe('Language Hook', () => {
     });
 
     await act(async () => {
-      result.current.changeLanguage('pt');
+      result.current.changeLanguage('pt-BR');
 
       await waitFor(() => {
-        expect(result.current.language).toBe('pt');
+        expect(result.current.language).toBe('pt-BR');
       });
     });
 
     await act(async () => {
-      result.current.changeLanguage('en');
+      result.current.changeLanguage('en-US');
 
       await waitFor(() => {
-        expect(result.current.language).toBe('en');
+        expect(result.current.language).toBe('en-US');
       });
     });
   });
