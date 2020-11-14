@@ -18,6 +18,12 @@
 
 <br>
 
+<p align="center">
+  <img src="client\src\assets\img\banner.png"/>
+</p>
+
+<br>
+
 ## Project :star2:
 
 This repo contains a [challenge](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/challenge-description.md) proposed by Memed, it's an medicine checkout application based on e-Prescribing.
@@ -48,6 +54,18 @@ On the Checkout Page (when the application finds the nearest pharmacy with lowes
 The application is 100% responsive, so the user can acces it on the web and mobile.
 
 There is also a Not Found Page if the user tries to access a route that doesn't exists.
+
+<br>
+
+<p align="center">
+  <img src="client\src\assets\img\project-1.gif"/>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="client\src\assets\img\project-2.gif"/>
+</p>
 
 <br>
 

@@ -10,6 +10,7 @@ const Routes: React.FC = () => (
     <Switch>
       <Route path="/" exact component={Homepage} />
       <Route path="/not-found" exact component={NotFound} />
+      <Route component={NotFound} />
     </Switch>
   </>
 );
