@@ -172,6 +172,6 @@ export default createGlobalStyle`
     }
 
     .hidden-card {
-      display: none;
+      display: none !important;
     }
 `;

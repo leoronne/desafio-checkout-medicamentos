@@ -7,6 +7,7 @@
 <p align="center">
   <a href="#project-star2">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs-rocket">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#general-information-and-functionalities-information_source">General Information</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#installation-wrench">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,8 +31,21 @@ Deployed [here](https://e-prescription.ronne.dev).
 ## Techs :rocket:
 
 - [x] [ReactJS](https://reactjs.org);
+- [x] [Node.js](https://nodejs.org/);
 - [x] [TypeScript](https://www.typescriptlang.org/);
 - [x] [Styled Components](https://styled-components.com/).
+
+<br>
+
+## General Information and Functionalities :information_source:
+
+For production basis, I decided to implement an server on the application to handle the requests directly to the original API, it's also responsible to get all the information from each pharmacy listed on the original request.
+
+The application has two languages implemented (Portuguese-BR and English-USA), the user can easily alter it on the Header of the page. But it doesn't affect the names of the items received from the API (since it does not have this functionality implemented, unfortunatelly).
+
+The page is 100% responsive, so the user can acces it on the web and mobile.
+
+There is also a Not Found Page if the user tries to access a route that doesn't exists.
 
 <br>
 
@@ -47,7 +61,9 @@ Then you can install the application using `npm install` or `yarn install` on th
 
 To start the application <strong>interface</strong> just run `npm run start:web` or `yarn start:web` on the root dir of the folder.
 
-<strong>Note: you need to create a .env file on the client directory based on the [example file](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example).</strong>
+To start the application <strong>server</strong> just run `npm run dev:server` or `yarn dev:server` on the root dir of the folder.
+
+<strong>Note: you need to create a .env file on the [server directory](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/server/.env.example) and one on the [client directory](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example) based on the example files.</strong>
 
 <br>
 

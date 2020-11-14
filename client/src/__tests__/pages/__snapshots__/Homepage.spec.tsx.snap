@@ -187,12 +187,14 @@ exports[`Homepage should render 1`] = `
               <div
                 class="info"
               >
-                <h2 />
+                <h2>
+                  Farmais
+                </h2>
                 <span>
-                  (at undefined meters)
+                  (at 546 meters)
                 </span>
                 <a
-                  href="https://www.google.com.br/maps/dir/-23.5648304,+-46.6436604/undefined,+undefined/@undefined,undefined,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d-46.6436604!2d-23.5648304!1m3!2m2!1dundefined!2dundefined"
+                  href="https://www.google.com.br/maps/dir/undefined,+undefined/-23.5640019,+-46.6489309/@-23.5640019,-46.6489309,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1dundefined!2dundefined!1m3!2m2!1d-46.6489309!2d-23.5640019"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -225,7 +227,7 @@ exports[`Homepage should render 1`] = `
                 distance-information
               </span>
               <p>
-                total: $NaN
+                total: $41.38
               </p>
             </div>
           </div>
