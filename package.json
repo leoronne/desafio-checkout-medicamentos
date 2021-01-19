@@ -1,9 +1,9 @@
 {
-  "name": "memed-medicine-checkout-challenge",
+  "name": "medicine-checkout",
   "description": "This repo contains a challenge proposed by Memed, it's an medicine checkout application based on e-Prescribing.",
   "version": "1.0.0",
   "main": "index.tsx",
-  "repository": "https://github.com/leoronne/memed-medicine-checkout-challenge",
+  "repository": "https://github.com/leoronne/medicine-checkout",
   "author": "Leonardo Ronne <leoronne@gmail.com>",
   "license": "MIT",
   "scripts": {

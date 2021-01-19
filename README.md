@@ -11,11 +11,12 @@
   <a href="#installation-wrench">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contributing-">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license-memo">License</a>
   <br>  
   <br>  
   <br>
-  <a href="https://insomnia.rest/run/?label=Memed&uri=https%3A%2F%2Fgithub.com%2Fleoronne%2Fmemed-medicine-checkout-challenge%2Fblob%2Fmaster%2Fserver%2Fserver-requests.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://insomnia.rest/run/?label=Memed&uri=https%3A%2F%2Fgithub.com%2Fleoronne%2Fmedicine-checkout%2Fblob%2Fmaster%2Fserver%2Fserver-requests.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 ##
@@ -30,7 +31,7 @@
 
 ## Project :star2:
 
-This repo contains a [challenge](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/challenge-description.md) proposed by Memed, it's an medicine checkout application based on e-Prescribing.
+This repo contains a [challenge](https://github.com/leoronne/medicine-checkout/blob/master/challenge-description.md) proposed by Memed, it's an medicine checkout application based on e-Prescribing.
 
 <br>
 
@@ -75,7 +76,7 @@ There is also a Not Found Page if the user tries to access a route that doesn't 
 
 ## Installation :wrench:
 
-First you need to clone the project using `git clone https://github.com/leoronne/memed-medicine-checkout-challenge.git`.
+First you need to clone the project using `git clone https://github.com/leoronne/medicine-checkout.git`.
 
 Then you can install the application using `npm install` or `yarn install` on the client and server directory.
 
@@ -87,7 +88,7 @@ To start the application <strong>interface</strong> just run `npm run start:web`
 
 To start the application <strong>server</strong> just run `npm run dev:server` or `yarn dev:server` on the root dir of the folder.
 
-<strong>Note: you need to create a .env file on the [server directory](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/server/.env.example) and one on the [client directory](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/client/.env.example) based on the example files.</strong>
+<strong>Note: you need to create a .env file on the [server directory](https://github.com/leoronne/medicine-checkout/blob/master/server/.env.example) and one on the [client directory](https://github.com/leoronne/medicine-checkout/blob/master/client/.env.example) based on the example files.</strong>
 
 <br>
 
@@ -97,11 +98,17 @@ To run the tests on this application, just run `npm run test:cover` or `yarn tes
 
 <br>
 
+## Contributing 🤔
+
+Please read [CONTRIBUTING](https://github.com/leoronne/square-landing-page/blob/master/CONTRIBUTING.md) for details on code of conduct, and the process for submitting pull requests to the project.
+
+<br>
+
 ## License :memo:
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-- **[MIT license](https://github.com/leoronne/memed-medicine-checkout-challenge/blob/master/LICENSE)**
+- **[MIT license](https://github.com/leoronne/medicine-checkout/blob/master/LICENSE)**
 - Copyright 2020 © <a href="https://github.com/leoronne" target="_blank">Leonardo Ronne</a>.
 
 ##
