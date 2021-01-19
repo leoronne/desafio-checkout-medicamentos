@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="client\src\assets\img\transparentBanner.png" width="300px" />
+  <img src="client\src\assets\img\transparentBanner.png" width="60%" />
 </p>
 
 ##
@@ -100,7 +100,7 @@ To run the tests on this application, just run `npm run test:cover` or `yarn tes
 
 ## Contributing 🤔
 
-Please read [CONTRIBUTING](https://github.com/leoronne/square-landing-page/blob/master/CONTRIBUTING.md) for details on code of conduct, and the process for submitting pull requests to the project.
+Please read [CONTRIBUTING](https://github.com/leoronne/medicine-checkout/blob/master/CONTRIBUTING.md) for details on code of conduct, and the process for submitting pull requests to the project.
 
 <br>
 

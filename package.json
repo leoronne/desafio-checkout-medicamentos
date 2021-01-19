@@ -9,8 +9,5 @@
   "scripts": {
     "start:web": "cd ./client/ && npm run start",
     "dev:server": "cd ./server/ && npm run dev:server"
-  },
-  "engines": {
-    "node": "14.15.0"
   }
 }
